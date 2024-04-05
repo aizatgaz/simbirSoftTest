@@ -1,4 +1,4 @@
-package ru.gazimov.simbirsofttest;
+package ru.gazimov.simbirsofttest.pages;
 
 import lombok.Getter;
 import org.openqa.selenium.WebDriver;
@@ -20,4 +20,6 @@ public class TransactionsPage {
     public TransactionsPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
+
+
 }

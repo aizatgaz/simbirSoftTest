@@ -1,5 +1,6 @@
-package ru.gazimov.simbirsofttest;
+package ru.gazimov.simbirsofttest.pages;
 
+import io.qameta.allure.Step;
 import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -37,4 +38,20 @@ public class AccountPage {
     public AccountPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
+
+
+    @Step("Пополнение счета на {fibonacci}")
+    public void depositAccount(int fibonacci) {
+        depositButton.click();
+        amountToDeposit.sendKeys(String.valueOf(fibonacci));
+        submitDepositButton.click();
+    }
+
+    @Step("Списание со счета на {fibonacci}")
+    public void withdrawAccount(int fibonacci) {
+        withdrawButton.click();
+        amountToWithdraw.sendKeys(String.valueOf(fibonacci));
+        submitWithdrawButton.click();
+    }
+
 }

@@ -1,5 +1,11 @@
 # Задание для SimbirSoft
 
+
+Перед стартом тестов, запустите Selenium Server(Grid) - скачать можно тут - https://www.selenium.dev/downloads/
+После установки, откройте терминал в папке с Selenium Server и пропишите - "java -jar selenium-server-<version>.jar standalone", 
+указав свою версию Selenium Server
+
+
 ## Само задание:
 
 В задании необходимо:
