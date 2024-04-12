@@ -36,7 +36,7 @@ public class TaskTest {
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-        driver = new RemoteWebDriver(new URL("http://localhost:4444/"), options);
+        driver = new RemoteWebDriver(new URL("http://172.17.0.3:4444/"), options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         driver.get(GLOBALSQA_URL);
 
